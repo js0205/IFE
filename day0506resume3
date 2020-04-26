@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简历</title>
+    <link rel="stylesheet" type="text/css" href="style_3.css" />
+</head>
+<body>
+    <div class="title">
+        <h1>简历</h1>
+    </div>
+    <div class="main">
+        <div class="basic">
+            <div class="left">
+                <h2>基本信息</h2>
+            </div>
+            <div class="right">
+                <p><strong>姓名</strong>&nbsp;张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>性别</strong>&nbsp;男&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>应聘职位 </strong>&nbsp;Web前端工程师</p>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="left">
+                <h2>联系方式</h2>
+            </div>
+            <div class="right">
+                <p><strong>手机</strong>&nbsp;12312341234&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Email&nbsp;</strong><a href="#">joinefe@baidu.com </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>个人主页&nbsp;</strong><a href="#">Github</a></p>
+            </div>
+        </div>
+        <div class="ability">
+            <div class="left">
+                <h2>能力描述</h2>
+            </div>
+            <div class="right">
+                <h4>技术能力</h4>
+                <p>熟练掌握HTML,CSS,JavaScript</p>
+                <h4>综合能力 </h4>
+                <p>良好的沟通，主动积极，努力勤奋</p>
+            </div>
+        </div>
+        <div class="education">
+            <div class="left">
+                <h2>教育经历</h2>
+            </div>
+            <div class="right">
+                <h4>本科</h4>
+                <p>百度前端技术学院小薇学院</p>
+                <h4>研究生</h4>
+                <p>百度前端技术学院大斌学院</p>
+            </div>
+        </div>
+        <div class="project">
+            <div class="left">
+                <h2>项目经历</h2>
+            </div>
+            <div class="right">
+                <h4>小度小度</h4>
+                <p>作为前端工程师角色参与了ABC组件的开发</p>
+                <h4>SAN Doc</h4>
+                <p>作为文档工程师参与了SAN Doc编写</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+style_03.css
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+}
+.title {
+    margin-top: 5px;
+    padding-left: 2px;
+    width: 100%;
+    height: 80px;
+    background-color: #777;
+}
+.title h1 {
+    margin-left: 20px;
+    height: 80px;
+    font-size: 24px;
+    line-height: 80px;
+    color: white;
+}
+.basic,
+.contact,
+.ability,
+.education,
+.project {
+    margin-left: 2px;
+    width: 100%;
+    height: 151px;
+    border-bottom: 1px solid #aaa;
+}
+.left {
+    float: left;
+    width: 150px;
+    height: 150px;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+    background-color: #aaa;
+}
+.right {
+    float: left;
+    margin-left: 20px;
+}
+h2 {
+    height: 150px;
+    font-size: 20px;
+    line-height: 150px;
+    color: #000;
+}
+h4,
+p {
+    font-size: 18px;
+}
+h4 {
+    margin-top: 18px;
+}
+.basic p,
+.contact p {
+    height: 150px;
+    line-height: 150px;
+    font-size: 18px;
+}
