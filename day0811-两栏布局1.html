@@ -1,0 +1,83 @@
+实现一个两栏布局，左侧占30%宽度，右侧占70%宽度
+（1）使用浮动——float
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>document</title>
+    <style>
+        div {
+            width: 100%;
+            height: 500px;
+        }  
+        .left {
+            float: left;
+            width: 30%;
+            background-color: lightpink;
+        }        
+        .right {
+            float: right;
+            width: 70%;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="left"></div>
+    <div class="right"></div>
+</body>
+</html>
+（2）Position定位
+（3）弹性盒子——flexbox
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>document</title>
+    <style>
+        .container {
+            display: flex;
+            height: 100vh;
+        }        
+        .left {
+            background-color: lightpink;
+            flex-basis: 30%;
+        }  
+        .right {
+            background-color: lightblue;
+            flex-basis: 70%;
+        }
+    </style>
+</head>
+<body class="container">
+    <div class="left"></div>
+    <div class="right"></div>
+</body>
+</html>
+（4）网格布局——grid
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>document</title>
+    <style>
+        .left {
+            background-color: lightpink;
+        }        
+        .right {
+            background-color: lightblue;
+        }
+        .wrapper {
+            width: 1000px;
+            height: 500px;
+            display: grid;
+            grid-template-columns: 30% 70%;
+        }
+    </style>
+</head>
+<body class="wrapper">
+    <div class="left"></div>
+    <div class="right"></div>
+</body>
+
+</html>
