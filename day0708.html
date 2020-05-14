@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div,
+        ul {
+            margin: 0;
+        }
+        header {
+            height: 80px;
+            background-color: gray;
+        }
+        .header-container {
+            width: 960px;
+            margin: 0 auto;
+        }
+        li {
+            list-style-type: none;
+        }
+        .logo {
+            display: inline-block;
+            margin: 0;
+            line-height: 80px;
+            font-size: 30px;
+            color: white;
+        } 
+        .header-nav {
+            float: right;
+        } 
+        .header-ul li {
+            margin: 0 5px;
+            float: left;
+        }
+        .banner {
+            background-color: green;
+            height: 200px;
+            position: relative;
+        } 
+        .banner-ul {
+            position: absolute;
+            right: 50px;
+            bottom: 20px;
+        } 
+        .banner-ul li {
+            float: left;
+            width: 30px;
+            height: 30px;
+            border: 1px solid #aaa;
+            background-color: #fff;
+        }
+        .banner-ul li a {
+            float: left;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+        }
+        .main-nav {
+            height: 70px;
+            border-bottom: 1px solid #ccc;
+        }
+        .main-nav ul {
+            margin: 0 auto;
+            width: 960px;
+            height: 100%;
+            margin-top: 20px;
+            display: flex;
+            align-items: flex-end;
+        }
+        .main-nav a {
+            display: inline-block;
+            width: 105px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            color: #333;
+            background-color: #eee;
+            border: 1px solid #ccc;
+            border-radius: 20px 20px 0 0;
+            bottom: -1px;
+        }
+        .main-nav ul .main-nav-activate {
+            background-color: #fff;
+            border-bottom: none;
+        }
+        .box {
+            display: flex;
+            flex-wrap: wrap;
+            width: 960px;
+            margin: 0 auto;
+        }
+        .content {
+            border: 1px solid #333;
+            margin: 5px 5px 5px 0;
+            padding: 80px;
+            text-align: center;
+        }
+        .content1,
+        .content2 {
+            flex-grow: 3;
+        }
+        .content3 {
+            flex-grow: 2;
+        } 
+        .content4,
+        .content5,
+        .content6,
+        .content7,
+        .content8,
+        .content9,
+        .content10 {
+            flex-grow: 1;
+        }   
+        footer {
+            width: 100%;
+            height: 80px;
+            text-align: center;
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="logo">Logo</h1>
+            <div class="header-nav">
+                <ul class="header-ul">
+                    <li><a href="#">Github</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="banner">
+        <ul class="banner-ul">
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+        </ul>
+    </div>
+    <nav class="main-nav">
+        <ul>
+            <li><a class="main-nav-activate" href="#">HOME</a></li>
+            <li><a href="#">PROFILE</a></li>
+            <li><a href="#">ABOUT</a></li>
+        </ul>
+        <hr>
+    </nav>
+    <div class="box">
+        <div class="content content1">This is Content 1</div>
+        <div class="content content2">MaybeContent 2</div>
+        <div class="content content3">Content 3</div>
+        <div class="content content4">Content 4</div>
+        <div class="content content5">Content 5</div>
+        <div class="content content6">Content 6</div>
+        <div class="content content7">Content 7</div>
+        <div class="content content8">Content 8</div>
+        <div class="content content9">Content 9</div>
+        <div class="content content10">Content 10</div>
+    </div>
+    <footer>
+        &copy;2018 ife.baidu.com
+    </footer>
+</body>
+</html>
